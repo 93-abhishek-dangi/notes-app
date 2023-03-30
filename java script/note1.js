@@ -46,7 +46,7 @@ const addNote = ( text ="") =>{
         saveNotes();
     })
 
-    note.querySelector('textarea').addEventListener("focusout", () =>{
+    note.querySelector('textarea').addEventListener("keyup", () =>{
         saveNotes();
     })
      main.appendChild(note);
